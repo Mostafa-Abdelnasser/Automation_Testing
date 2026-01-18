@@ -1,0 +1,36 @@
+Sauce_Demo_Automation/
+├── .idea/                          # IntelliJ project settings
+├── .mvn/                           # Maven wrapper files
+├── pom.xml                         # Maven build file (dependencies, plugins)
+├── target/                         # Auto-generated compiled output
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── mostafa.qa/
+│   │           ├── core/           # Core framework classes
+│   │           │   ├── BaseTest.java         # TestNG lifecycle + WebDriver setup
+│   │           │   ├── DriverFactory.java    # WebDriver creation logic
+│   │           │   └── PageBase.java         # Shared page object utilities
+│   │           └── pages/         # Page Object Model classes
+│   │               ├── LoginPage.java
+│   │               ├── InventoryPage.java
+│   │               ├── CartPage.java
+│   │               └── CheckoutPage.java
+│   └── resources/                 # Optional config files (e.g., test data, properties)
+├── test/
+│   ├── java/
+│   │   └── mostafa.qa/
+│   │       └── tests/             # TestNG test classes
+│   │           ├── LoginTest.java
+│   │           ├── InventoryTest.java
+│   │           ├── CartTest.java
+│   │           └── CheckoutTest.java
+│   └── test.iml                   # IntelliJ test module file
+├── reports/
+│   └── ExtentReport.html          # ExtentReports HTML output
+│                                  # Main report file
+├── performance-tests/             # JMeter test plans
+│   ├── LoginTest.jmx              # JMeter login test plan
+│   └── CheckoutTest.jmx           # (Optional) future performance test
+└── results/
+    └── report/                    # JMeter HTML reports
