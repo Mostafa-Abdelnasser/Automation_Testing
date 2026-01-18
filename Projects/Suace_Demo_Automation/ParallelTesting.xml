@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="SauceDemo Master Suite" parallel="tests" thread-count="3">
+
+    <!-- Run smoke tests in parallel -->
+    <test name="Smoke Suite" parallel="classes" thread-count="2">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.mostafa.qa.tests"/>
+        </packages>
+    </test>
+
+    <!-- Run regression tests in parallel -->
+    <test name="Regression Suite" parallel="classes" thread-count="3">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.mostafa.qa.tests"/>
+        </packages>
+    </test>
+
+    <!-- Run all tests in parallel -->
+    <test name="Full Suite" parallel="classes" thread-count="4">
+        <packages>
+            <package name="com.mostafa.qa.tests"/>
+        </packages>
+    </test>
+
+</suite>
