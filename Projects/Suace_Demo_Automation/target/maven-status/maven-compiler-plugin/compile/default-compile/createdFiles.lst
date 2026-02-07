@@ -1,8 +1,0 @@
-mostafa\qa\listeners\ExtentTestNGListener.class
-mostafa\qa\core\BaseTest.class
-mostafa\qa\utils\ExtentManager.class
-mostafa\qa\pages\CheckoutPage.class
-mostafa\qa\core\PageBase.class
-mostafa\qa\pages\CartPage.class
-mostafa\qa\pages\InventoryPage.class
-mostafa\qa\pages\LoginPage.class
